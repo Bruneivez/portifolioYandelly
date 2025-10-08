@@ -1,0 +1,202 @@
+/*
+Melhores Práticas:
+- Uso consistente de unidades (preferencialmente rem/em para fontes, mas mantive pt/px para respeitar o original).
+- Corrigida a cor do logotipo.
+*/
+
+body {
+    /* Limitando a largura do body a 1080px e centralizando,
+       como solicitado. Isso fará com que header e footer também sejam limitados. */
+    background: rgb(245, 245, 245); /* Cor de fundo dentro do limite de 1080px */
+    font: normal 15pt Arial, sans-serif;
+    box-sizing: border-box;
+    margin: 0 auto; /* Centraliza o body */
+    padding: 0;
+    max-width: 1080px; /* Limita a largura do body */
+}
+
+li, a {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+header {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    display: flex;
+    justify-content: flex-end; /* Mantém o alinhamento à direita para os links */
+    align-items: center;
+    padding: 20px 15px;
+    background-color: #122f51;
+}
+
+.logotipo {
+    color: #fff; 
+    font-size: 35px;
+    font-weight: bold;
+    margin-right: auto; /* Garante que o logotipo fique à esquerda */
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0; 
+    padding: 0; 
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav-links li a:hover {
+    color: #f3d7c2;
+}
+
+
+
+/* --- 
+Estilos de Main/Conteúdo
+--- 
+*/
+
+h1 {
+    text-align: center;
+    color: #122f51; /* CORRIGIDO DE VOLTA PARA #fe958f para ser consistente com o seu código anterior */
+    margin-top: 30px; 
+    margin-bottom: 20px;
+}
+
+/* ESTILO ATUALIZADO: Usando max-width e % para a seção principal da index.html */
+section {
+    background: #8bb6a3;
+    border-radius: 20px;
+    padding: 10px;
+    max-width: 500px; /* Mantém a limitação visual, mas permite encolher */
+    width: 90%; /* Ocupa 90% do container em telas pequenas */
+    margin: 20px auto; 
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.705);
+    font: 1em sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+/* ESTILO ATUALIZADO: Usando porcentagem para os boxes encolherem proporcionalmente */
+div.box {
+    width: 23%; /* Permite 4 boxes lado a lado (cerca de 25% cada) */
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 1%; /* Margem relativa para ajudar no ajuste */
+    padding: 0; /* Removendo padding para otimizar espaço */
+    vertical-align: top;
+}
+
+/* Seletor section.produtos mantido, mas estilos inconsistentes removidos */
+/*
+section.produtos {
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 50px;
+}
+*/
+
+/* --- 
+Estilos de Navegação (Links)
+--- 
+*/
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    display: block;
+    border-radius: 10px; 
+}
+
+.nav-links a:hover {
+    background-color: #f0f0f0; 
+    color: #007BFF; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+.n1 {
+    color: rgb(98, 80, 255); 
+    text-decoration: underline; 
+}
+
+/* --- 
+Estilos de Rodapé
+--- 
+*/
+
+footer {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background-color: #122f51;
+    padding: 50px;
+    margin-top: 50px;
+}
+
+footer a {
+    color: #fff; 
+    text-decoration: underline;
+    font-style: normal;
+}
+
+/* Novo estilo para a lista (agora com classe) */
+.footer-contatos {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0; /* Adiciona espaço acima e abaixo da lista de contatos */
+}
+
+/* Novo estilo para organizar cada item de contato */
+.footer-contatos li {
+    display: flex; /* Habilita o Flexbox */
+    justify-content: center; /* Centraliza horizontalmente o ícone e o texto */
+    align-items: center; /* Centraliza verticalmente o ícone e o texto */
+    margin-bottom: 8px; /* Espaçamento entre os itens da lista */
+    font-size: 18px; /* Garante que o tamanho da fonte seja legível */
+}
+
+/* Estilo para os ícones dentro da lista */
+.footer-contatos li img {
+    margin-right: 8px; /* Espaço entre o ícone e o texto */
+    /* Garante que o ícone não se desloque verticalmente */
+    vertical-align: middle; 
+}
+
+/* Estilo para os links dentro da lista (remove o sublinhado no texto se desejar) */
+.footer-contatos li a {
+    text-decoration: none; /* Remove o sublinhado, já que o link está em <li> */
+}
+
+.footer-contatos li a:hover {
+    text-decoration: underline; /* Adiciona o sublinhado de volta apenas no hover */
+}
+
+/* --- 
+Estilos Responsivos (Media Query)
+--- 
+*/
+
+@media (max-width: 800px) {
+    li, a, button {
+        font-size: 12px;
+    }
+
+    .logotipo {
+        font-size: 22px;
+    }
+    
+    /* Removemos o estilo original de 'section' para usar o novo 'max-width: 90%' no topo */
+    /* Este bloco de 'section' e 'div.box' foi removido porque o ajuste de % acima já resolve o encolhimento */
+}
+
+html {
+    background-color: #e3dfdf; /* Cor escura para o fundo externo */
+}
