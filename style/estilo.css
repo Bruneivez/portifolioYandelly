@@ -1,202 +1,248 @@
-/*
-Melhores Práticas:
-- Uso consistente de unidades (preferencialmente rem/em para fontes, mas mantive pt/px para respeitar o original).
-- Corrigida a cor do logotipo.
-*/
-
-body {
-    /* Limitando a largura do body a 1080px e centralizando,
-       como solicitado. Isso fará com que header e footer também sejam limitados. */
-    background: rgb(245, 245, 245); /* Cor de fundo dentro do limite de 1080px */
-    font: normal 15pt Arial, sans-serif;
-    box-sizing: border-box;
-    margin: 0 auto; /* Centraliza o body */
+/* ===========================
+   Reset básico
+=========================== */
+* {
+    margin: 0;
     padding: 0;
-    max-width: 1080px; /* Limita a largura do body */
+    box-sizing: border-box;
 }
 
-li, a {
-    font-size: 18px;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
+/* ===========================
+   Fonte e corpo
+=========================== */
+body {
+    background-color: #f5f5f5;
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    max-width: 1080px;
+    margin: 0 auto;
 }
 
+/* ===========================
+   Cabeçalho
+=========================== */
 header {
-    color: rgb(255, 255, 255);
-    text-align: center;
     display: flex;
-    justify-content: flex-end; /* Mantém o alinhamento à direita para os links */
+    justify-content: space-between;
     align-items: center;
-    padding: 20px 15px;
+    padding: 15px 20px;
     background-color: #122f51;
+    border-bottom: 4px solid #8bb6a3;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header img {
+    width: 50px;
+    height: auto;
 }
 
 .logotipo {
-    color: #fff; 
-    font-size: 35px;
-    font-weight: bold;
-    margin-right: auto; /* Garante que o logotipo fique à esquerda */
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    
 }
 
 .nav-links {
     list-style: none;
-    margin: 0; 
-    padding: 0; 
+    display: flex;
+    gap: 20px;
 }
 
-.nav-links li {
-    display: inline-block;
-    padding: 0px 20px;
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+    font-weight: 500;
 }
 
 .nav-links li a:hover {
-    color: #f3d7c2;
+    background-color: #fe958f;
+    color: #122f51;
 }
 
-
-
-/* --- 
-Estilos de Main/Conteúdo
---- 
-*/
-
+/* ===========================
+   Títulos
+=========================== */
 h1 {
     text-align: center;
-    color: #122f51; /* CORRIGIDO DE VOLTA PARA #fe958f para ser consistente com o seu código anterior */
-    margin-top: 30px; 
+    color: #122f51;
+    font-size: 2.5rem;
+    margin: 30px 0 20px 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+/* ===========================
+   Seções principais
+=========================== */
+section {
+    background-color: #8bb6a3;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px auto;
+    text-align: center;
+    color: #fff;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Boxes da index.html */
+div.box {
+    display: inline-block;
+    width: 23%;
+    margin: 1%;
+    vertical-align: top;
+    background-color: #d2c8c8;
+    border-radius: 15px;
+    padding: 15px;
+    transition: 0.3s;
+    color: #333;
+    
+}
+
+div.box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    
+}
+
+div.box img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100px;
+    
+}
+
+div.box p {
+    margin-top: 10px;
+    font-weight: 500;
+    color: #333;
+    
+}
+
+/* Produtos (pag003.html) */
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.produto-item {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: 0.3s;
+    text-align: center;
+}
+
+.produto-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+.produto-item img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.produto-item figcaption {
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.produto-item p {
+    color: #333;
+}
+
+/* ===========================
+   Rodapé
+=========================== */
+footer {
+    background-color: #122f51;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 4px solid #8bb6a3;
+}
+
+.footer-contatos {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
     margin-bottom: 20px;
 }
 
-/* ESTILO ATUALIZADO: Usando max-width e % para a seção principal da index.html */
-section {
-    background: #8bb6a3;
-    border-radius: 20px;
-    padding: 10px;
-    max-width: 500px; /* Mantém a limitação visual, mas permite encolher */
-    width: 90%; /* Ocupa 90% do container em telas pequenas */
-    margin: 20px auto; 
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.705);
-    font: 1em sans-serif;
-    color: rgb(255, 255, 255);
-    text-align: center;
-}
-
-/* ESTILO ATUALIZADO: Usando porcentagem para os boxes encolherem proporcionalmente */
-div.box {
-    width: 23%; /* Permite 4 boxes lado a lado (cerca de 25% cada) */
-    display: inline-block;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    margin: 1%; /* Margem relativa para ajudar no ajuste */
-    padding: 0; /* Removendo padding para otimizar espaço */
-    vertical-align: top;
-}
-
-/* Seletor section.produtos mantido, mas estilos inconsistentes removidos */
-/*
-section.produtos {
-    padding: 50px;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    text-align: center;
-    margin-top: 50px;
-}
-*/
-
-/* --- 
-Estilos de Navegação (Links)
---- 
-*/
-
-.nav-links a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    padding: 10px;
-    display: block;
-    border-radius: 10px; 
-}
-
-.nav-links a:hover {
-    background-color: #f0f0f0; 
-    color: #007BFF; 
-    transition: background-color 0.3s, color 0.3s; 
-}
-
-.n1 {
-    color: rgb(98, 80, 255); 
-    text-decoration: underline; 
-}
-
-/* --- 
-Estilos de Rodapé
---- 
-*/
-
-footer {
-    color: rgb(255, 255, 255);
-    text-align: center;
-    background-color: #122f51;
-    padding: 50px;
-    margin-top: 50px;
-}
-
-footer a {
-    color: #fff; 
-    text-decoration: underline;
-    font-style: normal;
-}
-
-/* Novo estilo para a lista (agora com classe) */
-.footer-contatos {
-    list-style: none;
-    padding: 0;
-    margin: 20px 0; /* Adiciona espaço acima e abaixo da lista de contatos */
-}
-
-/* Novo estilo para organizar cada item de contato */
 .footer-contatos li {
-    display: flex; /* Habilita o Flexbox */
-    justify-content: center; /* Centraliza horizontalmente o ícone e o texto */
-    align-items: center; /* Centraliza verticalmente o ícone e o texto */
-    margin-bottom: 8px; /* Espaçamento entre os itens da lista */
-    font-size: 18px; /* Garante que o tamanho da fonte seja legível */
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
 }
 
-/* Estilo para os ícones dentro da lista */
 .footer-contatos li img {
-    margin-right: 8px; /* Espaço entre o ícone e o texto */
-    /* Garante que o ícone não se desloque verticalmente */
-    vertical-align: middle; 
+    display: block;
+    max-width: 20px;
 }
 
-/* Estilo para os links dentro da lista (remove o sublinhado no texto se desejar) */
 .footer-contatos li a {
-    text-decoration: none; /* Remove o sublinhado, já que o link está em <li> */
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
 }
 
 .footer-contatos li a:hover {
-    text-decoration: underline; /* Adiciona o sublinhado de volta apenas no hover */
+    color: #fe958f;
 }
 
-/* --- 
-Estilos Responsivos (Media Query)
---- 
-*/
+footer p small {
+    font-size: 14px;
+}
 
-@media (max-width: 800px) {
-    li, a, button {
-        font-size: 12px;
+/* ===========================
+   Responsividade
+=========================== */
+@media (max-width: 900px) {
+    div.box {
+        width: 45%;
+        margin: 2.5%;
     }
+    .produto-item {
+        width: 90%;
+    }
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+}
 
+@media (max-width: 500px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
     .logotipo {
-        font-size: 22px;
+        font-size: 26px;
     }
-    
-    /* Removemos o estilo original de 'section' para usar o novo 'max-width: 90%' no topo */
-    /* Este bloco de 'section' e 'div.box' foi removido porque o ajuste de % acima já resolve o encolhimento */
-}
-
-html {
-    background-color: #e3dfdf; /* Cor escura para o fundo externo */
 }
