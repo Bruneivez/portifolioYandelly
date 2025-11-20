@@ -9,17 +9,18 @@
 </head>
 <body>
     <header>
-        <a href="index.html" class="logo-link">
-    <img src="style/529f28fc-2aa2-4e79-b98a-e5315bd7f2b4.png" alt="Logotipo Yandelly Sorvetes" width="50"/>
-</a>
+        <div class="header-logo">
+            <a href="index.html" class="logo-link">
+                <img src="style/529f28fc-2aa2-4e79-b98a-e5315bd7f2b4.png" alt="Logotipo Yandelly Sorvetes" width="50"/>
+            </a>
+            <span class="logotipo">Yandelly</span>
+        </div>
 
-<span class="logotipo">Yandelly</span>
-
-        
         <nav aria-label="Navegação Principal">
+            <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
             <ul class="nav-links">
                 <li><a href="index.html">Início</a></li>
-                <li><a href="pag002.html" aria-current="page">Sobre nós</a></li>
+                <li><a href="pag002.html" class="active">Sobre nós</a></li>
                 <li><a href="pag003.html">Produtos</a></li>
             </ul>
         </nav>
@@ -28,27 +29,29 @@
     <main>
         <h1>Nossa História</h1>
         <section class="sobre-a-empresa">
-            <p>Desde 2018, a Yandelly Delícias vem se destacando no mercado alimentício. Com uma equipe de profissionais qualificados, a empresa tem como objetivo principal a satisfação de seus clientes. A Yandelly Delícias é uma empresa que se preocupa com a qualidade de seus produtos e com o bem-estar de seus colaboradores.</p>
+            <p class="intro-text">Desde 2018, a Yandelly Delícias vem se destacando no mercado alimentício. Com uma equipe de profissionais qualificados, a empresa tem como objetivo principal a satisfação de seus clientes. A Yandelly Delícias é uma empresa que se preocupa com a qualidade de seus produtos e com o bem-estar de seus colaboradores.</p>
             
-            <article>
-                <h2>Missão</h2>
-                <p>Produzir sorvetes e salgadinhos de qualidade, com sabor e preço acessível.</p>
-            </article>
-            
-            <article>
-                <h2>Visão</h2>  
-                <p>Ser reconhecida como uma empresa de excelência no mercado de sorvetes e salgadinhos.</p>
-            </article>
-            
-            <article>
-                <h2>Valores</h2>
-                    <ul style="list-style-type: none; padding-left: 0;">
+            <div class="valores-grid">
+                <article class="card-valor">
+                    <h2>Missão</h2>
+                    <p>Produzir sorvetes e salgadinhos de qualidade, com sabor e preço acessível.</p>
+                </article>
+                
+                <article class="card-valor">
+                    <h2>Visão</h2>  
+                    <p>Ser reconhecida como uma empresa de excelência no mercado de sorvetes e salgadinhos.</p>
+                </article>
+                
+                <article class="card-valor">
+                    <h2>Valores</h2>
+                    <ul>
                         <li>Ética</li>
                         <li>Transparência</li>
                         <li>Responsabilidade Social</li>
                         <li>Inovação</li>
                     </ul>
-            </article>
+                </article>
+            </div>
         </section>
     </main>
     
@@ -57,29 +60,29 @@
         
         <ul class="footer-contatos">
             <li>
-                <img src="style/instagram-icon.png.png" alt="Ícone do Instagram" width="20" height="20">
-                <a href="https://www.instagram.com/yandelly.delicias?igsh=MXBhMHI3aHlza2E5Yw==" target="_blank">@yandelly.delicias (Instagram)</a>
+                <img src="style/instagram-icon.png.png" alt="Instagram" width="20" height="20">
+                <a href="https://www.instagram.com/yandelly.delicias?igsh=MXBhMHI3aHlza2E5Yw==" target="_blank">@yandelly.delicias</a>
             </li>
             
             <li>
-                <img src="style/whatsapp-icon.png.png" alt="Ícone do WhatsApp" width="20" height="20">
-                <a href="https://wa.me/5511967853094" target="_blank">+55 (11) 96785-3094 </a>
+                <img src="style/whatsapp-icon.png.png" alt="WhatsApp" width="20" height="20">
+                <a href="https://wa.me/5511967853094" target="_blank">(11) 96785-3094</a>
             </li>
             
             <li>
-                <img src="style/whatsapp-icon.png.png" alt="Ícone do WhatsApp" width="20" height="20">
-                <a href="https://wa.me/5511962072936" target="_blank">+55 (11) 96207-2936 </a>
+                <img src="style/whatsapp-icon.png.png" alt="WhatsApp" width="20" height="20">
+                <a href="https://wa.me/5511962072936" target="_blank">(11) 96207-2936</a>
             </li>
             
             <li>
-                <img src="style/email-icon.png.png" alt="Ícone de Email" width="20" height="20">
-                <a href="mailto:contatoyandelly@yahoo.com">contatoyandelly@yahoo.com</a>
+                <img src="style/email-icon.png.png" alt="Email" width="20" height="20">
+                <a href="mailto:contatoyandelly@yahoo.com">contato via email</a>
             </li>
         </ul>
         
-        <p>
+        <p class="copyright">
             <small>
-                &copy; 2025 <strong>Yandelly Sorvetes</strong>. Todos os direitos reservados.
+                &copy; 2025 <strong>Yandelly Sorvetes</strong>. Todos os direitos reservados.<br>
                 CNPJ: <span class="cnpj">59.827.034/0001-05</span>
             </small>
         </p>

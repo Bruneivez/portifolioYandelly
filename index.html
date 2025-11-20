@@ -4,17 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yandelly Sorvetes | A diferença faz tudo!</title>
+    <meta name="description" content="Yandelly Sorvetes e Salgadinhos. Delícias feitas com carinho para você.">
     <link rel="stylesheet" href="style/estilo.css">
     <link rel="shortcut icon" href="style/SALGADINHO DE TRIGO (5).ico" type="image/x-icon">
 </head>
 <body>
     <header>
-        <img src="style/529f28fc-2aa2-4e79-b98a-e5315bd7f2b4.png" alt="Logotipo Yandelly Sorvetes" width="50"/>
-        <span class="logotipo">Yandelly</span>
+        <div class="header-logo">
+            <a href="index.html">
+                <img src="style/529f28fc-2aa2-4e79-b98a-e5315bd7f2b4.png" alt="Yandelly Sorvetes Logo" width="50"/>
+            </a>
+            <span class="logotipo">Yandelly</span>
+        </div>
         
         <nav aria-label="Navegação Principal">
+            <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
             <ul class="nav-links">
-                <li><a href="index.html">Início</a></li>
+                <li><a href="index.html" class="active">Início</a></li>
                 <li><a href="pag002.html">Sobre Nós</a></li>
                 <li><a href="pag003.html">Produtos</a></li>
             </ul>
@@ -24,54 +30,51 @@
     <main>
         <h1>A diferença faz tudo!</h1>
 
-    <section class="carousel-container">
-    <div class="carousel">
-        <div class="carousel-slide">
-            <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Sorvete de casquinha">
-        </div>
-        <div class="carousel-slide">
-            <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Donuts coloridos">
-        </div>
-        <div class="carousel-slide">
-            <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Bolo decorado">
-        </div>
-        <div class="carousel-slide">
-            <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Macarons franceses">
-        </div>
-        <div class="carousel-slide">
-            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Bolo de chocolate">
-        </div>
-        <div class="carousel-slide">
-            <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Cupcakes decorados">
-        </div>
-    </div>
-   </section>
-
-     <section aria-labelledby="section-title">
-            <h2 id="section-title" style="display: none;">Destaques e Categorias</h2>
-
-            <div class="box">
-                <a href="pag003.html">
-                    <img src="style/snack.png" alt="Link para a categoria Peletts" width="100"/>
-                    <p>Peletts</p>
-                </a>
-            </div>
-            <div class="box">
-                <a href="pag003.html">
-                    <img src="style/icons8-ice-pop-pink-100.png" alt="Link para a categoria Sorvetes" width="100"/>
-                    <p>Sorvetes</p>
-                </a>
-            </div>
-            
-            <div class="box">
-                <a href="pag002.html">
-                    <img src="style/icons8-coração-100.png" alt="Link para a página Sobre nós - Feito com carinho" width="100"/>
-                    <p>Feito com carinho para você</p>
-                </a>
+        <!-- Carrossel -->
+        <section class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-slide">
+                    <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Sorvete de casquinha">
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Donuts coloridos">
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Bolo decorado">
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Macarons franceses">
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Bolo de chocolate">
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Cupcakes decorados">
+                </div>
             </div>
         </section>
 
-    
+        <!-- Destaques -->
+        <section class="destaques-section" aria-labelledby="section-title">
+            <h2 id="section-title" class="sr-only">Destaques e Categorias</h2>
+
+            <div class="destaques-container">
+                <a href="pag003.html" class="box">
+                    <img src="style/snack.png" alt="Pacote de Peletts" width="100"/>
+                    <p>Peletts</p>
+                </a>
+            
+                <a href="pag003.html" class="box">
+                    <img src="style/icons8-ice-pop-pink-100.png" alt="Ícone de Sorvete" width="100"/>
+                    <p>Sorvetes</p>
+                </a>
+            
+                <a href="pag002.html" class="box">
+                    <img src="style/icons8-coração-100.png" alt="Ícone de Coração" width="100"/>
+                    <p>Feito com carinho</p>
+                </a>
+            </div>
+        </section>
 
     </main>
     
@@ -80,29 +83,29 @@
         
         <ul class="footer-contatos">
             <li>
-                <img src="style/instagram-icon.png.png" alt="Ícone do Instagram" width="20" height="20">
-                <a href="https://www.instagram.com/yandelly.delicias?igsh=MXBhMHI3aHlza2E5Yw==" target="_blank">@yandelly.delicias (Instagram)</a>
+                <img src="style/instagram-icon.png.png" alt="Instagram" width="20" height="20">
+                <a href="https://www.instagram.com/yandelly.delicias?igsh=MXBhMHI3aHlza2E5Yw==" target="_blank">@yandelly.delicias</a>
             </li>
             
             <li>
-                <img src="style/whatsapp-icon.png.png" alt="Ícone do WhatsApp" width="20" height="20">
-                <a href="https://wa.me/5511967853094" target="_blank">+55 (11) 96785-3094 </a>
+                <img src="style/whatsapp-icon.png.png" alt="WhatsApp" width="20" height="20">
+                <a href="https://wa.me/5511967853094" target="_blank">(11) 96785-3094</a>
             </li>
             
             <li>
-                <img src="style/whatsapp-icon.png.png" alt="Ícone do WhatsApp" width="20" height="20">
-                <a href="https://wa.me/5511962072936" target="_blank">+55 (11) 96207-2936 </a>
+                <img src="style/whatsapp-icon.png.png" alt="WhatsApp" width="20" height="20">
+                <a href="https://wa.me/5511962072936" target="_blank">(11) 96207-2936</a>
             </li>
             
             <li>
-                <img src="style/email-icon.png.png" alt="Ícone de Email" width="20" height="20">
-                <a href="mailto:contatoyandelly@yahoo.com">contatoyandelly@yahoo.com</a>
+                <img src="style/email-icon.png.png" alt="Email" width="20" height="20">
+                <a href="mailto:contatoyandelly@yahoo.com">contato via email</a>
             </li>
         </ul>
         
-        <p>
+        <p class="copyright">
             <small>
-                &copy; 2025 <strong>Yandelly Sorvetes</strong>. Todos os direitos reservados.
+                &copy; 2025 <strong>Yandelly Sorvetes</strong>. Todos os direitos reservados.<br>
                 CNPJ: <span class="cnpj">59.827.034/0001-05</span>
             </small>
         </p>

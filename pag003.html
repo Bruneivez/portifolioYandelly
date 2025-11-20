@@ -9,18 +9,19 @@
 </head>
 <body>
     <header>
-        <a href="index.html" class="logo-link">
-    <img src="style/529f28fc-2aa2-4e79-b98a-e5315bd7f2b4.png" alt="Logotipo Yandelly Sorvetes" width="50"/>
-</a>
+        <div class="header-logo">
+            <a href="index.html" class="logo-link">
+                <img src="style/529f28fc-2aa2-4e79-b98a-e5315bd7f2b4.png" alt="Logotipo Yandelly Sorvetes" width="50"/>
+            </a>
+            <span class="logotipo">Yandelly</span>
+        </div>
 
-<span class="logotipo">Yandelly</span>
-
-        
         <nav aria-label="Navegação Principal">
+            <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
             <ul class="nav-links">
                 <li><a href="index.html">Início</a></li>
                 <li><a href="pag002.html">Sobre nós</a></li>
-                <li><a href="pag003.html" aria-current="page">Produtos</a></li>
+                <li><a href="pag003.html" class="active">Produtos</a></li>
             </ul>
         </nav>
     </header>
@@ -28,176 +29,167 @@
     <main>
         <h1>Nossos Produtos</h1>
         
-        <section class="produtos">
+        <section class="produtos-container">
+            <!-- Imagens mantidas com os nomes originais solicitados -->
+            
             <div class="produto-item">
                 <figure>
-                    <img src="style/picole.png" alt="Imagem de picolés e sorvetes Yandelly">
+                    <img src="style/picole.png" alt="Picolés Yandelly" loading="lazy">
                     <figcaption>Sorvetes e Picolés</figcaption>
-                    <p>22,99</p>
                 </figure>
-               
+                <p class="preco">R$ 22,99</p>
             </div> 
             
             <div class="produto-item">
                 <figure>
-                    <img src="style/casquinha de chocolate.png" alt="Imagem de picolés e sorvetes Yandelly">
-                    <figcaption>Sorvete Sabor Chocolate</figcaption>
-                    <p>22,99</p>
+                    <img src="style/casquinha de chocolate.png" alt="Sorvete de Chocolate" loading="lazy">
+                    <figcaption>Sorvete Chocolate</figcaption>
                 </figure>
-               
+                <p class="preco">R$ 22,99</p>
             </div> 
+
             <div class="produto-item">
                 <figure>
-                    <img src="style/Sorvete Sabor Napolitano.png" alt="Imagem de picolés e sorvetes Yandelly">
-                    <figcaption>Sorvete Sabor Napolitano</figcaption>
-                    <p>22,99</p>
+                    <img src="style/Sorvete Sabor Napolitano.png" alt="Sorvete Napolitano" loading="lazy">
+                    <figcaption>Sorvete Napolitano</figcaption>
                 </figure>
-               
+                <p class="preco">R$ 22,99</p>
             </div> 
+
             <div class="produto-item">
                 <figure>
-                    <img src="style/Sorvete Sabor Maracuja.png" alt="Imagem de picolés e sorvetes Yandelly">
-                    <figcaption>Sorvete Sabor Maracuja</figcaption>
-                    <p>22,99</p>
+                    <img src="style/Sorvete Sabor Maracuja.png" alt="Sorvete Maracujá" loading="lazy">
+                    <figcaption>Sorvete Maracujá</figcaption>
                 </figure>
-               
+                <p class="preco">R$ 22,99</p>
             </div> 
+
             <div class="produto-item">
                 <figure>
-                    <img src="style/Sorvete Dois Sabores.png" alt="Imagem de picolés e sorvetes Yandelly">
-                    <figcaption>Sorvete Dois Sabore</figcaption>
-                    <p>22,99</p>
+                    <img src="style/Sorvete Dois Sabores.png" alt="Sorvete Dois Sabores" loading="lazy">
+                    <figcaption>Dois Sabores</figcaption>
                 </figure>
-               
+                <p class="preco">R$ 22,99</p>
             </div> 
+
             <div class="produto-item">
                 <figure>
-                    <img src="style/Sorvete Crispi.png" alt="Imagem de picolés e sorvetes Yandelly">
+                    <img src="style/Sorvete Crispi.png" alt="Sorvete Crispi" loading="lazy">
                     <figcaption>Sorvete Crispi</figcaption>
-                    <p>22,99</p>
                 </figure>
-               
+                <p class="preco">R$ 22,99</p>
             </div> 
+
             <div class="produto-item">
                 <figure>
-                    <img src="style/Sorvete Sabor Pistache.png" alt="Imagem de picolés e sorvetes Yandelly">
-                    <figcaption>Sorvete Sabor Pistache</figcaption>
-                    <p>22,99</p>
+                    <img src="style/Sorvete Sabor Pistache.png" alt="Sorvete Pistache" loading="lazy">
+                    <figcaption>Sorvete Pistache</figcaption>
                 </figure>
-               
+                <p class="preco">R$ 22,99</p>
             </div> 
             
             <div class="produto-item">
                 <figure>
-                    <img src="style/pururuca.png" width="300px" alt="Imagem de salgadinho de trigo (pururuca)">
+                    <img src="style/pururuca.png" alt="Salgadinho Pururuca" loading="lazy">
                     <figcaption>Salgadinhos (Peletts)</figcaption>
-                    <p>22,99</p>
                 </figure>
-                
+                <p class="preco">R$ 22,99</p>
             </div>
 
             <div class="produto-item">
                 <figure>
-                    <img src="style/amendoin.png" alt="Imagem de amendoin">
-                    <figcaption>Amendoin</figcaption>
-                    <p>22,99</p>
+                    <img src="style/amendoin.png" alt="Amendoim" loading="lazy">
+                    <figcaption>Amendoim</figcaption>
                 </figure>
-               
+                <p class="preco">R$ 22,99</p>
             </div> 
 
             <div class="produto-item">
                 <figure>
-                    <img src="style/paçoca branca.png" alt="Imagem de >Paçoca Branca">
+                    <img src="style/paçoca branca.png" alt="Paçoca Branca" loading="lazy">
                     <figcaption>Paçoca Branca</figcaption>
-                    <p>22,99</p>
                 </figure>
-               
+                <p class="preco">R$ 22,99</p>
             </div> 
 
             <div class="produto-item">
                 <figure>
-                    <img src="style/Paçoquinha.png" alt="Imagem de Paçoquinha">
+                    <img src="style/Paçoquinha.png" alt="Paçoquinha" loading="lazy">
                     <figcaption>Paçoquinha</figcaption>
-                    <p>22,99</p>
                 </figure>
-               
+                <p class="preco">R$ 22,99</p>
             </div> 
 
             <div class="produto-item">
                 <figure>
-                    <img src="style/Paçocão.png" alt="Imagem de Paçocão">
+                    <img src="style/Paçocão.png" alt="Paçocão" loading="lazy">
                     <figcaption>Paçocão</figcaption>
-                    <p>22,99</p>
                 </figure>
-               
+                <p class="preco">R$ 22,99</p>
             </div> 
 
             <div class="produto-item">
                 <figure>
-                    <img src="style/Paçoca caseira.png" alt="Imagem de Paçoca Caseira">
+                    <img src="style/Paçoca caseira.png" alt="Paçoca Caseira" loading="lazy">
                     <figcaption>Paçoca Caseira</figcaption>
-                    <p>22,99</p>
                 </figure>
-               
+                <p class="preco">R$ 22,99</p>
             </div> 
 
             <div class="produto-item">
                 <figure>
-                    <img src="style/Cocada Caseira.png" alt="Imagem de Cocada Caseira">
+                    <img src="style/Cocada Caseira.png" alt="Cocada Caseira" loading="lazy">
                     <figcaption>Cocada Caseira</figcaption>
-                    <p>22,99</p>
                 </figure>
-               
+                <p class="preco">R$ 22,99</p>
             </div> 
 
             <div class="produto-item">
                 <figure>
-                    <img src="style/Copinho Banana.png" alt="Imagem de Copinho Banana">
+                    <img src="style/Copinho Banana.png" alt="Copinho Banana" loading="lazy">
                     <figcaption>Copinho Banana</figcaption>
-                    <p>22,99</p>
                 </figure>
-               
+                <p class="preco">R$ 22,99</p>
             </div> 
 
             <div class="produto-item">
                 <figure>
-                    <img src="style/Paçoca Caseira no Espeto.png" alt="Imagem de Paçoca Caseira no Espeto">
-                    <figcaption>Paçoca Caseira no Espeto</figcaption>
-                    <p>22,99</p>
+                    <img src="style/Paçoca Caseira no Espeto.png" alt="Paçoca no Espeto" loading="lazy">
+                    <figcaption>Paçoca no Espeto</figcaption>
                 </figure>
-               
+                <p class="preco">R$ 22,99</p>
             </div> 
         </section>
     </main>
 
-     <footer id="footer">
+    <footer id="footer">
         <img src="style/529f28fc-2aa2-4e79-b98a-e5315bd7f2b4.png" alt="Logotipo Yandelly Sorvetes" width="50"/> 
         
         <ul class="footer-contatos">
             <li>
-                <img src="style/instagram-icon.png.png" alt="Ícone do Instagram" width="20" height="20">
-                <a href="https://www.instagram.com/yandelly.delicias?igsh=MXBhMHI3aHlza2E5Yw==" target="_blank">@yandelly.delicias (Instagram)</a>
+                <img src="style/instagram-icon.png.png" alt="Instagram" width="20" height="20">
+                <a href="https://www.instagram.com/yandelly.delicias?igsh=MXBhMHI3aHlza2E5Yw==" target="_blank">@yandelly.delicias</a>
             </li>
             
             <li>
-                <img src="style/whatsapp-icon.png.png" alt="Ícone do WhatsApp" width="20" height="20">
-                <a href="https://wa.me/5511967853094" target="_blank">+55 (11) 96785-3094 </a>
+                <img src="style/whatsapp-icon.png.png" alt="WhatsApp" width="20" height="20">
+                <a href="https://wa.me/5511967853094" target="_blank">(11) 96785-3094</a>
             </li>
             
             <li>
-                <img src="style/whatsapp-icon.png.png" alt="Ícone do WhatsApp" width="20" height="20">
-                <a href="https://wa.me/5511962072936" target="_blank">+55 (11) 96207-2936 </a>
+                <img src="style/whatsapp-icon.png.png" alt="WhatsApp" width="20" height="20">
+                <a href="https://wa.me/5511962072936" target="_blank">(11) 96207-2936</a>
             </li>
             
             <li>
-                <img src="style/email-icon.png.png" alt="Ícone de Email" width="20" height="20">
-                <a href="mailto:contatoyandelly@yahoo.com">contatoyandelly@yahoo.com</a>
+                <img src="style/email-icon.png.png" alt="Email" width="20" height="20">
+                <a href="mailto:contatoyandelly@yahoo.com">contato via email</a>
             </li>
         </ul>
         
-        <p>
+        <p class="copyright">
             <small>
-                &copy; 2025 <strong>Yandelly Sorvetes</strong>. Todos os direitos reservados.
+                &copy; 2025 <strong>Yandelly Sorvetes</strong>. Todos os direitos reservados.<br>
                 CNPJ: <span class="cnpj">59.827.034/0001-05</span>
             </small>
         </p>
